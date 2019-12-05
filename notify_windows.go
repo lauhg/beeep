@@ -93,7 +93,6 @@ func toastNotify(title, message, appIcon string) error {
 }
 
 func toastNotification(title, message, appIcon string) toast.Notification {
-	fmt.Println("xxxxxxxxxxxxxxxxxxxxxxxx")
 	return toast.Notification{
 		AppID:   applicationID,
 		Title:   title,
