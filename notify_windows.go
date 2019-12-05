@@ -10,6 +10,7 @@ import (
 	"strings"
 	"syscall"
 	"time"
+	"fmt"
 
 	"github.com/tadvi/systray"
 	"golang.org/x/sys/windows/registry"
@@ -92,11 +93,13 @@ func toastNotify(title, message, appIcon string) error {
 }
 
 func toastNotification(title, message, appIcon string) toast.Notification {
+	fmt.Println("xxxxxxxxxxxxxxxxxxxxxxxx")
 	return toast.Notification{
 		AppID:   applicationID,
 		Title:   title,
 		Message: message,
 		Icon:    appIcon,
+		Duration: toast.Long,
 	}
 }
 
