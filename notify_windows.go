@@ -10,7 +10,6 @@ import (
 	"strings"
 	"syscall"
 	"time"
-	"fmt"
 
 	"github.com/tadvi/systray"
 	"golang.org/x/sys/windows/registry"
